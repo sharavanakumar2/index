@@ -3,71 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
+    <title>Coaching Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gradient-to-br from-purple-800 to-indigo-900 text-white">
-    <!-- Navbar -->
-    <header class="flex justify-between items-center px-10 py-4 bg-white text-black">
-        <div class="flex items-center">
-            <img src="Untitled.png" alt="Logo" class="h-10">
-            <span class="ml-2 text-xl font-semibold">Askmelndentity</span>
-        </div>
-        <nav class="space-x-8">
-            <a href="#" class="hover:text-blue-500">Home</a>
-            <a href="#" class="hover:text-blue-500">About</a>
-            <a href="#" class="hover:text-blue-500">Courses</a>
-            <a href="#" class="hover:text-blue-500">Contact</a>
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <header class="flex justify-between items-center p-6">
+        
+        <img src="Untitled.png" alt="Logo" class="h-10">
+        <nav class="space-x-6">
+            <a href="#" class="hover:underline">Home</a>
+            <a href="#" class="hover:underline">About</a>
+            <a href="#" class="hover:underline">Courses</a>
+            <a href="#" class="hover:underline">Contact</a>
         </nav>
         <div class="space-x-4">
-            <a href="#" class="hover:text-blue-500">Login</a>
-            <a href="#" class="px-6 py-2 bg-blue-500 text-white font-bold rounded-full">Signup</a>
+            <button class="bg-transparent border border-white px-4 py-2 rounded">Login</button>
+            <button class="bg-blue-700 px-4 py-2 rounded">Signup</button>
         </div>
     </header>
-
-    <!-- Hero Section -->
-    <section class="text-center mt-10 max-w-7xl mx-auto px-6">
-        <p class="text-sm uppercase tracking-wider mb-2">Successful Coaches Are Visionaries</p>
-        <h1 class="text-6xl font-bold mb-6 leading-tight">
-            Good <span class="text-blue-400">coaching</span> is good teaching & nothing else.
-        </h1>
-        <div class="flex justify-center space-x-4 mb-8">
-            <a href="#" class="px-6 py-3 bg-transparent border border-white text-white font-bold rounded-lg hover:bg-white hover:text-indigo-900 transition duration-300">View Courses</a>
-            <a href="#" class="px-6 py-3 bg-white text-indigo-900 font-bold rounded-lg hover:bg-indigo-200 transition duration-300">Get Free Consultation</a>
+    <main class="flex flex-col items-center text-center p-12">
+        <h1 class="text-4xl font-bold mb-4">Good <span class="text-blue-300">coaching</span> is good teaching & nothing else.</h1>
+        <div class="space-x-4 mb-8">
+            <button class="bg-blue-700 px-6 py-3 rounded">View Courses</button>
+            <button class="bg-transparent border border-white px-6 py-3 rounded">Get Free Consultation</button>
         </div>
-        <div class="flex justify-center">
-            <input class="w-2/3 px-4 py-2 rounded-l-lg focus:outline-none text-black" type="text" placeholder="What do you want to learn today?">
-            <button class="px-6 py-2 bg-blue-500 hover:bg-blue-600 rounded-r-lg font-bold">Search</button>
+        <div class="relative w-full max-w-md mb-12">
+            <input type="text" placeholder="What do you want to learn today?" class="w-full px-4 py-3 rounded text-black">
+            <button class="absolute right-0 top-0 bg-blue-700 px-4 py-3 rounded-r">Search</button>
         </div>
+        <div class="flex space-x-8 mb-12">
+            <img src="spotify-logo.png" alt="Spotify" class="h-12">
+            <img src="amazon-logo.png" alt="Amazon" class="h-12">
+            <img src="cisco-logo.png" alt="Cisco" class="h-12">
+            <img src="logitech-logo.png" alt="Logitech" class="h-12">
+        </div>
+    
+        <!-- Featured Courses Section -->
+        <section class="w-full max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6">Featured Courses</h2>
+            <p class="text-lg mb-12">THE FEATURE COURSES ARE WE INVENTED OUR TEACHING PART.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course Item -->
+                <div class="bg-white text-black p-6 rounded-lg shadow-lg">
+                    <img src="motion-graphics.jpg" alt="Motion Graphics" class="mb-4 rounded-md">
+                    <h3 class="text-2xl font-bold mb-2">Motion Graphics: Create a Nice Typography Animation</h3>
+                    <p class="mb-2">1,957 Students · 0h 55m · Rs.499</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded">Enroll Now</button>
+                </div>
+                <!-- Course Item -->
+                <div class="bg-white text-black p-6 rounded-lg shadow-lg">
+                    <img src="advance-php.jpg" alt="Advance PHP" class="mb-4 rounded-md">
+                    <h3 class="text-2xl font-bold mb-2">Advance PHP knowledge with JS to make smart web</h3>
+                    <p class="mb-2">3,535 Students · 0h 55m · Rs.499</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded">Enroll Now</button>
+                </div>
+                <!-- Additional Course Items here... -->
+            </div>
+            <button class="mt-12 bg-blue-700 px-6 py-3 rounded">Explore Courses</button>
+        </section>
+    
+        <!-- Why Learn With Us Section -->
+        <section class="w-full max-w-5xl mx-auto mt-12 text-left">
+            <h2 class="text-3xl font-bold mb-6">Why learn with our courses?</h2>
+            <div class="flex space-x-6 mb-12">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">01. Learn</h3>
+                    <p>Learn continually. There is always "one more thing" to learn.</p>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">02. Graduate</h3>
+                    <p>Be bold, be courageous, be your best.</p>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold mb-2">03. Work</h3>
+                    <p>Great companies are built in the office, with hard work put in by team.</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Top Categories Section -->
+        <section class="w-full max-w-5xl mx-auto mt-12 text-left">
+            <h2 class="text-3xl font-bold mb-6">Top Categories</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-6 bg-white text-black rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Digital Marketing</h3>
+                    <p>25 Courses</p>
+                </div>
+                <div class="p-6 bg-white text-black rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                    <p>16 Courses</p>
+                </div>
+                <div class="p-6 bg-white text-black rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Art & Humanities</h3>
+                    <p>76 Courses</p>
+                </div>
+                <div class="p-6 bg-white text-black rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Personal Development</h3>
+                    <p>22 Courses</p>
+                </div>
+                <div class="p-6 bg-white text-black rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">IT and Software</h3>
+                    <p>110 Courses</p>
+                </div>
+                <div class="p-6 bg-white text-black rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Graphic Design</h3>
+                    <p>85 Courses</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Subscription Banner -->
+        <section class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white p-8 my-12 rounded-lg">
+            <h2 class="text-3xl font-bold mb-4">Subscribe For Get Update Every New Courses</h2>
+            <p class="text-lg mb-6">20k+ students daily learn with Edukit. Subscribe for new courses.</p>
+            <div class="flex justify-center space-x-4">
+                <input type="email" placeholder="Enter your email" class="w-full max-w-xs p-3 rounded text-black">
+                <button class="bg-blue-700 px-4 py-3 rounded">Subscribe</button>
+            </div>
+        </section>
+    
+        <!-- Course Preview Video Section -->
+        <section class="w-full max-w-5xl mx-auto text-left">
+            <h2 class="text-3xl font-bold mb-6">Course Preview</h2>
+            <div class="relative">
+                <img src="course-preview.jpg" alt="Course Preview" class="w-full rounded-lg shadow-lg">
+                <button class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 text-white text-2xl rounded-lg">
+                    ▶
+                </button>
+            </div>
+            
 
-        <!-- Image and Quote -->
-        <div class="flex justify-between items-center mt-16">
-            <!-- Empty space or additional content -->
-            <div class="w-1/3"></div>
-            <!-- Image with quote -->
-            <div class="relative w-2/3">
-                <img src="your-image-path-here.jpg" alt="Person Image" class="w-full object-cover rounded-lg shadow-lg">
-                <div class="absolute top-10 right-10 text-sm bg-white p-4 rounded-lg text-left text-black">
-                    <p class="italic">"In a coaching role, you ask the questions and rely more on your staff, who become the experts, to provide the information."</p>
-                    <p class="font-bold text-right mt-2">- Shyam</p>
+    <!-- Testimonials Section -->
+    <section class="w-full max-w-5xl mx-auto mt-12 text-center">
+        <h2 class="text-3xl font-bold mb-6">Testimonials</h2>
+        <p class="text-lg mb-8">What our student say about us</p>
+        
+        </section>
+    
+    
+        <!-- Testimonial Cards -->
+        <div class="flex justify-center space-x-6">
+            <!-- Testimonial 1 -->
+            <div class="bg-white text-black p-6 rounded-lg shadow-lg w-80">
+                <div class="mb-4">
+                    <img src="testimonial-image1.jpg" alt="Student Image" class="rounded-full h-16 mx-auto">
+                </div>
+                <p class="mb-4">Such an amazing trainer and easily understand the entire syllabus, and the guidance will be super and good to the way of explaining.</p>
+                <div class="flex justify-center space-x-1">
+                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                </div>
+            </div>
+    
+            <!-- Testimonial 2 -->
+            <div class="bg-white text-black p-6 rounded-lg shadow-lg w-80">
+                <div class="mb-4">
+                    <img src="testimonial-image2.jpg" alt="Student Image" class="rounded-full h-16 mx-auto">
+                </div>
+                <p class="mb-4">Such an amazing trainer and easily understand the entire syllabus, and the guidance will be super and good to the way of explaining.</p>
+                <div class="flex justify-center space-x-1">
+                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                </div>
+            </div>
+    
+            <!-- Testimonial 3 -->
+            <div class="bg-white text-black p-6 rounded-lg shadow-lg w-80">
+                <div class="mb-4">
+                    <img src="testimonial-image3.jpg" alt="Student Image" class="rounded-full h-16 mx-auto">
+                </div>
+                <p class="mb-4">Such an amazing trainer and easily understand the entire syllabus, and the guidance will be super and good to the way of explaining.</p>
+                <div class="flex justify-center space-x-1">
+                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
                 </div>
             </div>
         </div>
+    
+        <!-- Carousel Navigation -->
+        <div class="flex justify-center space-x-4 mt-6">
+            <button class="bg-gray-300 px-2 py-1 rounded-full">❮</button>
+            <button class="bg-gray-300 px-2 py-1 rounded-full">❯</button>
+        </div>
     </section>
-
-    <!-- Footer with Logos -->
-    <footer class="mt-16 bg-white py-6">
-        <div class="flex justify-center space-x-12">
-            <img src="spotify-logo-path.png" alt="Spotify" class="h-12">
-            <img src="amazon-logo-path.png" alt="Amazon" class="h-12">
-            <img src="cisco-logo-path.png" alt="Cisco" class="h-12">
-            <img src="logitech-logo-path.png" alt="Logitech" class="h-12">
+    
+    <!-- Footer Section -->
+    <footer class="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-12 mt-16">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+            <!-- Connect Section -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Connect</h3>
+                <p>Sri Jagannath Nilaya 8-1-16/12, Pratap Colony, Khadakpally, Nizamabad</p>
+                <p class="mt-2">Nawab Subha Kunta, Hyd-500085</p>
+                <img src="askmeidentity-logo.png" alt="AskMeIdentity Logo" class="h-12 mx-auto md:mx-0">
+            </div>
+    
+            <!-- Classes Section -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Classes</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">Classroom courses</a></li>
+                    <li><a href="#" class="hover:underline">Virtual classroom courses</a></li>
+                    <li><a href="#" class="hover:underline">E-learning courses</a></li>
+                    <li><a href="#" class="hover:underline">Offline Courses</a></li>
+                </ul>
+            </div>
+    
+            <!-- Community Section -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Community</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">Learners</a></li>
+                    <li><a href="#" class="hover:underline">Partners</a></li>
+                    <li><a href="#" class="hover:underline">Developers</a></li>
+                    <li><a href="#" class="hover:underline">Blog</a></li>
+                </ul>
+            </div>
+    
+            <!-- Quick Links Section -->
+            <div>
+                <h3 class="text-lg font-bold mb-4">Quick links</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Courses</a></li>
+                    <li><a href="#" class="hover:underline">Admissions</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="text-center mt-8">
+            <p>&copy; 2023 AskMeIdentity, All Rights Reserved</p>
         </div>
     </footer>
+    
+    </body>
+    </html>
+    
+    
+    
+    
 </body>
 </html>
